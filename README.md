@@ -6,5 +6,6 @@ cover:
 - deep copy
 - implementation of `copyWithZone` using `allocWithZone`
 - override of `copyWithZone`
-- should use `self class` when calling `allocWithZone` aka `[[[self class] allocWithZone:zone] init];`
+- should use `self class` when calling `allocWithZone` for the ease of sub-classing
+  aka `[[[self class] allocWithZone:zone] init];`
 - access ivar directly will not follow the copy attributed property
